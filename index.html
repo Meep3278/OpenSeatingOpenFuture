@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+<head> <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" /> </head>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-purple w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-purple" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a onclick="smoothScroll('#home')" class="w3-bar-item w3-button w3-padding-large w3-text-purple w3-white w3-hover-purple">Home</a>
+    <a onclick="smoothScroll('#OurPlatform')" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-hover-text-purple">Our Platform</a>
+    <a onclick="smoothScroll('#OurCandidates')" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-hover-text-purple">Our Candidates</a>
+    <a onclick="smoothScroll('#OurLayout')" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-hover-text-purple">Our Layout</a>
+    <a onclick="smoothScroll('#WhyYouShouldCare')" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-hover-text-purple">Why You Should Care</a>
+    <a onclick="smoothScroll('#SupportUs')" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-hover-text-purple">Support Us</a>
+    <a onclick="smoothScroll('#Facebook')" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-hover-text-purple">Our Facebook Page</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a onclick="smoothScroll('#OurPlatform')" class="w3-bar-item w3-button w3-padding-large">Our Platform</a>
+    <a onclick="smoothScroll('#OurCandidates')" class="w3-bar-item w3-button w3-padding-large">Our Candidates</a>
+    <a onclick="smoothScroll('#OurLayout')" class="w3-bar-item w3-button w3-padding-large">Our Layout</a>
+    <a onclick="smoothScroll('#WhyYouShouldCare')" class="w3-bar-item w3-button w3-padding-large">Why You Should Care</a>
+    <a onclick="smoothScroll('#SupportUs')" class="w3-bar-item w3-button w3-padding-large">Support Us</a>
+    <a onclick="smoothScroll('#Facebook')" class="w3-bar-item w3-button w3-padding-large">Our Facebook Page</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header id="home" class="w3-container w3-purple w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Open Seating,<br> Open Future</h1>
+  <p class="w3-xlarge">United Students of Miguel</p>
+  <button onclick="smoothScroll('#OurPlatform')" class="w3-button w3-white w3-text-purple w3-padding-large w3-large w3-margin-top w3-hover-purple w3-hover-text-white">What Do We Stand For?</button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+     <div class="w3-text-purple">
+      <h1>Our Platform</h1>
+      <h5 id="OurPlatform" class="w3-padding-32 w3-text-purple">The United Students of Miguel strives to increase liberty in all of Mr. Miguel’s classes.</h5>
+
+      <p class="w3-text-purple">The lack of seating freedom within classes oppresses students and leads to a feeling of isolation from their companions.  Although teachers want to increase productivity in their classrooms, seating charts come with the price of discouraging communication and self-advocacy.  Open classroom seating has a profound impact on student motivation and achievement.  Assigned classroom seating is mainly a question of whether or not teachers want their students to succeed to their highest potential. To an extent, control makes education less desirable.<br><br></p>
+
+<img src="data:image/jpeg;base64,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" alt="Our Platform", style="margin-left:125px", width="400", height="250">
+
+<p class="s3-padding-32 w3-text-purple">For years, teachers have used seating charts with good intentions, believing that students would make new friends and learn to talk to others with confidence.  However, the underlying issue of the struggle for control is not solved by the implementation of assigned seating.  Trust is the foundation for any successful teacher-student relationship.  The amount of trust between students and their teachers plummets when seating charts are created and imposed upon students.<br><br>
+</p>
+<img src="http://virco.com/sites/default/files/styles/575x575/public/products/co/zu418tabr/co-zu418tabr-pur43-mpl385clr-chrm.png?itok=FVRK25dy" alt="Our Platform" style="margin-left:125px", width="400", height="350">
+
+<p class="s3-padding-32 w3-text-purple">Implementing unassigned and flexible seating is a shift in both structure and teaching philosophy. Teachers must be willing to give up the power of the seating chart and fully trust their students to select their seats wisely and responsibly. Students will become more aware of what types of seating and learning environment suits them best, empowering them to take more opportunities to learn.</p>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div id="OurCandidates" class="w3-row-padding w3-white w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird w3-text-purple">
+      <h1>Our Candidates</h1>
+    </div>
+    <div class="w3-third w3-right">
+      <img src="file:///C:/Users/zevgo/Downloads/IMG_3439.JPG" alt="Tori Picture" width="100" height="100" style="margin-top:50px"</img>
+    </div>
+      <h5 class="w3-padding-32 w3-text-purple">Tori Fong, who is running for President, represents Gunn at FBLA and DECA competitions and participates in Gunn Theatre on and off of the stage.</h5>
+      <div class="w3-third w3-center">
+      <img src="file:///C:/Users/zevgo/Downloads/IMG_E3206.JPG" alt="Emily Picture" width="100" height="100" style="margin-left:150px"</img>
+    </div>
+      <h5 class="w3-padding-32 w3-text-purple">Emily Cohen, who is running for Vice President, is a reporter on Titan Broadcast Network and is on Gunn Cheer.</h5>
+</div></div></div>
+<div id="OurLayout" class="w3-container w3-purple w3-center w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Our Layout?<br>We have none!<br>Choose where you want to sit yourself!</h1>
+</div>
+<!-- Third Grid -->
+<div id="WhyYouShouldCare" class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+     <div class="w3-text-purple">
+      <h1>Why You Should Care</h1>
+      <h5 class="w3-padding-32 w3-text-purple">
+Open seating will allow each and every student to learn in an environment that is supportive and comfortable.  Students all learn in different ways and at different paces, meaning that seating charts force every student to learn the same as their tablemates, even if they have conflicting ways and speeds of learning. Students should be comfortable and feel at ease when in class, all the while feeling that they’re learning to the best of their ability, at their own speed, and not as if they’re either being rushed or dragged.
+
+</h5>
+    </div>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="https://www.simplytablesandchairs.co.uk/wp-content/uploads/2015/07/EN-5-Grape-Crush.jpg", alt="Why You Should Care", width="400", height="500">
+    </div>
+  </div>
+</div>
+<div id="SupportUs" class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+     <div class="w3-text-purple">
+      <h1>Support Us</h1>
+      <h5 class="w3-padding-32 w3-text-purple">To support us, give your Miguel Bucks to Mr. Miguel and tell him to give them to us, or give them to Elliot Kau.</h5>
+    </div>
+    </div>
+    <div class="w3-third w3-center">
+      <img src="http://www.roofscreen.com/mediafiles/pages/icons/18_installation-save-time-money-icon.png", alt="Purple Money", width="300", height="250">
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div id="Facebook" class="w3-xlarge w3-padding-32 w3-text-purple">
+    <h5>Our Facebook</h5>
+    <i onclick="location.href='https://www.facebook.com/United-Students-of-Miguel-222964754951174/?modal=admin_todo_tour';" class="fa fa-facebook-official w3-hover-opacity" style="font-size:200px;color:purple;"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer><link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+function smoothScroll(href){
+  document.querySelector(href).scrollIntoView({
+  behavior: 'smooth'
+});
+}
+</script>
+</body>
+</html>
